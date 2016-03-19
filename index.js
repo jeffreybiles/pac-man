@@ -2,5 +2,8 @@
 'use strict';
 
 module.exports = {
-  name: 'pac-man'
+  name: 'pac-man',
+  isDevelopingAddon: function() {
+    return true;
+  }
 };
