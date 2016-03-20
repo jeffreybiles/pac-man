@@ -14,7 +14,8 @@ export default Level.extend({
     '   .www wwwww www.   ',
     'www.             .www',
     '  w.www ww ww www.w  ',
-    'www.w   wwwww   w.www',
+    '  w.w   wwwww   w.w  ',
+    'www.w w wwwww w w.www',
     '   .  w       w  .   ',
     'www.wwwww w wwwww.www',
     '  w.....  w  .....w  ',
@@ -28,7 +29,7 @@ export default Level.extend({
   ],
   startingPac: {
     x: 10,
-    y: 15
+    y: 16
   },
   startingGhosts: [{
     x: 10,

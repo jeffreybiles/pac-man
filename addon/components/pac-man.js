@@ -7,10 +7,11 @@ import Level from '../models/level';
 import Level2 from '../models/level2';
 import TeleportLevel from '../models/teleport-level';
 import MsPac1 from '../models/ms-pac-1';
+import MsPac2 from '../models/ms-pac-2';
 
 
 export default Ember.Component.extend(KeyboardShortcuts, SharedStuff, {
-  levels: [MsPac1],
+  levels: [MsPac1, MsPac2],
 
   didInsertElement() {
     this.startNewLevel();
