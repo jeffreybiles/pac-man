@@ -14,6 +14,6 @@
 
 ### Once again, how can I read about how to BUILD PACMAN?
 
-Buy buying my book, [BUILD PACMAN](https://leanpub.com/buildpacman)
+By buying my book, [BUILD PACMAN](https://leanpub.com/buildpacman)
 
 [![](https://s3.amazonaws.com/titlepages.leanpub.com/buildpacman/hero?1457936060)](https://leanpub.com/buildpacman)
