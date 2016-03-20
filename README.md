@@ -1,26 +1,13 @@
-# Pac-man
+# PacMan.  In your Browser.
 
-This README outlines the details of collaborating on this Ember addon.
+### [See it in action](https://www.emberscreencasts.com/pacman)
 
-## Installation
+### Put it in your app
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+1. `ember install pac-man`
+2. Include the `{{pac-man}}` component anywhere in your app
 
-## Running
+### Make it your own
 
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+3. [Read how it was made](https://leanpub.com/buildpacman).
+4. Create your own levels, change variables... maybe help me write a better AI?
