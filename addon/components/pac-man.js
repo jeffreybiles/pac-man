@@ -52,7 +52,7 @@ export default Ember.Component.extend(KeyboardShortcuts, SharedStuff, {
     let ctx = this.get('ctx');
     let squareSize = this.get('level.squareSize');
 
-    ctx.fillStyle = '#000';
+    ctx.fillStyle = '#EAA';
     ctx.fillRect(x * squareSize,
                  y * squareSize,
                  squareSize,
@@ -63,13 +63,13 @@ export default Ember.Component.extend(KeyboardShortcuts, SharedStuff, {
     let grid = this.get('level.grid');
     grid.forEach((row, rowIndex)=>{
       row.forEach((cell, columnIndex)=>{
-        if(cell == 1){
+        if(cell == 'w'){
           this.drawWall(columnIndex, rowIndex);
         }
-        if(cell == 2){
+        if(cell == '.'){
           this.drawPellet(columnIndex, rowIndex);
         }
-        if(cell == 3){
+        if(cell == '-'){
           this.drawPowerPellet(columnIndex, rowIndex)
         }
       })
@@ -120,16 +120,16 @@ export default Ember.Component.extend(KeyboardShortcuts, SharedStuff, {
     let y = this.get('pac.y');
     let grid = this.get('level.grid');
 
-    if(grid[y][x] == 2){
-      grid[y][x] = 0;
+    if(grid[y][x] == '.'){
+      grid[y][x] = ' ';
       this.incrementProperty('score')
 
       if(this.get('level').isComplete()){
         this.incrementProperty('levelNumber')
         this.startNewLevel()
       }
-    } else if(grid[y][x] == 3){
-      grid[y][x] = 0;
+    } else if(grid[y][x] == '-'){
+      grid[y][x] = ' ';
       this.set('pac.powerModeTime', this.get('pac.maxPowerModeTime'));
     }
   },

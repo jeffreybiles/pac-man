@@ -41,7 +41,7 @@ export default Ember.Mixin.create({
 
   pathBlockedInDirection(direction) {
     let cellTypeInDirection = this.cellTypeInDirection(direction);
-    return Ember.isEmpty(cellTypeInDirection) || cellTypeInDirection === 1;
+    return Ember.isEmpty(cellTypeInDirection) || cellTypeInDirection === 'w';
   },
 
   cellTypeInDirection(direction) {

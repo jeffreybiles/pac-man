@@ -16,16 +16,16 @@ export default Ember.Object.extend({
     return this.get('height') * this.get('squareSize');
   }),
 
-  // 0 is a blank space
-  // 1 is a wall
-  // 2 is a pellet
+  //   is a blank space
+  // w is a wall
+  // . is a pellet
   layout: [
-    [2, 2, 2, 1, 1, 1, 1, 1],
-    [2, 1, 2, 1, 1, 1, 1, 1],
-    [2, 2, 1, 2, 1, 1, 1, 1],
-    [2, 2, 2, 2, 1, 1, 1, 1],
-    [2, 2, 2, 2, 1, 1, 1, 1],
-    [1, 2, 2, 2, 1, 1, 1, 1],
+    [...wwwww],
+    [.w.wwwww],
+    [..w.wwww],
+    [....wwww],
+    [....wwww],
+    [w...wwww],
   ],
   startingPac: {
     x: 2,
@@ -45,7 +45,7 @@ export default Ember.Object.extend({
 
     grid.forEach((row)=>{
       row.forEach((cell)=>{
-        if(cell == 2){
+        if(cell == '.'){
           hasPelletsLeft = true
         }
       })
@@ -54,7 +54,9 @@ export default Ember.Object.extend({
   },
 
   restart(){
-    var newLayout = jQuery.extend(true, [], this.get('layout'));
+    var newLayout = this.get('layout').map((row)=>{
+      return row.split('');
+    })
     this.set('grid', newLayout);
   }
 })
