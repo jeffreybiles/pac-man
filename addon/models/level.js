@@ -20,12 +20,12 @@ export default Ember.Object.extend({
   // w is a wall
   // . is a pellet
   layout: [
-    [...wwwww],
-    [.w.wwwww],
-    [..w.wwww],
-    [....wwww],
-    [....wwww],
-    [w...wwww],
+    '...wwwww',
+    '.w.wwwww',
+    '..w.wwww',
+    '....wwww',
+    '....wwww',
+    'w...wwww',
   ],
   startingPac: {
     x: 2,

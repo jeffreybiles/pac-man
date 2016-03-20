@@ -3,14 +3,14 @@ import Level from './level';
 export default Level.extend({
   squareSize: 60,
   layout: [
-    [www.wwwww],
-    [w......ww],
-    [w.......w],
-    [w..www..w],
-    [w.......w],
-    [w.w.w.w.w],
-    [w-......w],
-    [www.wwwww],
+    'www.wwwww',
+    'w......ww',
+    'w.......w',
+    'w..www..w',
+    'w.......w',
+    'w.w.w.w.w',
+    'w-......w',
+    'www.wwwww',
   ],
   startingPac: {
     x: 1,
