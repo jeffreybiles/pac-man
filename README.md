@@ -11,3 +11,9 @@
 
 3. [Read how it was made](https://leanpub.com/buildpacman).
 4. Create your own levels, change variables... maybe help me write a better AI?
+
+### Once again, how can I read about how to BUILD PACMAN?
+
+Buy buying my book, [BUILD PACMAN](https://leanpub.com/buildpacman)
+
+[![](https://s3.amazonaws.com/titlepages.leanpub.com/buildpacman/hero?1457936060)](https://leanpub.com/buildpacman)
