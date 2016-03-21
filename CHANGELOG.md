@@ -1,3 +1,4 @@
+* Wall and pellet color changes by level
 
 ### 0.0.3
 
@@ -12,3 +13,12 @@
 ### 0.0.1
 
 First release- very similar to build created in [BUILD PACMAN](https://leanpub.com/buildpacman).
+
+### TODO
+
+* Level blueprint
+
+### Wishlist (please contribute)
+
+* Better AI
+* Wall rounding and outlining (like in the original Ms PacMan)

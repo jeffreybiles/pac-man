@@ -56,7 +56,7 @@ export default Ember.Component.extend(KeyboardShortcuts, SharedStuff, {
     let ctx = this.get('ctx');
     let squareSize = this.get('level.squareSize');
 
-    ctx.fillStyle = '#EAA';
+    ctx.fillStyle = this.get('level.wallColor');
     ctx.fillRect(x * squareSize,
                  y * squareSize,
                  squareSize,
@@ -81,13 +81,13 @@ export default Ember.Component.extend(KeyboardShortcuts, SharedStuff, {
   },
 
   drawPellet(x, y){
-    let radiusDivisor = 6;
-    this.drawCircle(x, y, radiusDivisor, 'stopped');
+    let radiusDivisor = 8;
+    this.drawCircle(x, y, radiusDivisor, 'stopped', this.get('level.pelletColor'));
   },
 
   drawPowerPellet(x, y){
-    let radiusDivisor = 4;
-    this.drawCircle(x, y, radiusDivisor, 'stopped', 'green')
+    let radiusDivisor = 3;
+    this.drawCircle(x, y, radiusDivisor, 'stopped', this.get('level.powerPelletColor'));
   },
 
   clearScreen(){

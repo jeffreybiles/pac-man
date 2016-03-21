@@ -3,6 +3,9 @@ import Level from './level';
 export default Level.extend({
   squareSize: 25,
   teleport: true,
+  wallColor: '#77D9D9',
+  pelletColor: '#D9D9D9',
+  powerPelletColor: '#D8D800',
   layout: [
     'wwwwwwwwwwwwwwwwwwwww',
     '      w.......w      ',

@@ -3,6 +3,9 @@ import Ember from 'ember';
 export default Ember.Object.extend({
   squareSize: 40,
   teleport: true,
+  wallColor: '#CCC',
+  pelletColor: '#CCC',
+  powerPelletColor: '#0E0',
   width: Ember.computed(function(){
     return this.get('grid.firstObject.length')
   }),
