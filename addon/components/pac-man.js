@@ -157,9 +157,9 @@ export default Ember.Component.extend(KeyboardShortcuts, SharedStuff, {
   },
 
   keyboardShortcuts: {
-    up() { this.set('pac.intent', 'up');},
-    down()  { this.set('pac.intent', 'down');},
-    left() { this.set('pac.intent', 'left');},
-    right() { this.set('pac.intent', 'right');},
+    up() { this.set('pac.intent', 'up'); return false;},
+    down()  { this.set('pac.intent', 'down'); return false;},
+    left() { this.set('pac.intent', 'left'); return false;},
+    right() { this.set('pac.intent', 'right'); return false;},
   },
 });
